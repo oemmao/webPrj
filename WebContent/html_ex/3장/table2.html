@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>표에 제목 붙이기</title>
+    <style>
+        table {
+            border:1px solid gray;
+            border-collapse:collapse;
+        }
+        td, th{
+            border:1px solid gray;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>요안도라 객실</caption>
+        <tr>
+            <th scope="col">방이름</th>
+            <th scope="col">대상</th>
+            <th scope="col">크기</th>
+            <th scope="col">가격</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup">유채방</th>
+            <td>도미토리</td>
+            <td>4인실</td>
+            <td>1인 20,000원</td>
+        </tr>
+        <tr>
+            <th scope="row">동백실</th>
+            <td>도미토리</td>
+            <td>2인실</td>
+            <td>1인 20,000원</td>
+        </tr>
+        <tr>
+            <th>천혜향방</th>
+            <td>가족실</td>
+            <td>4인실</td>
+            <td>60,000원</td>
+        </tr>
+    </table>
+</body>
+</html>

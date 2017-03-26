@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculation</title>
+	<link rel="stylesheet" type="text/css" href="../css/calstyle.css" >
+	<script src="../js/caljs.js"></script>
+</head>
+<body>
+	<div class="all">
+	<header class="head" >
+		<a href = "../index.html" target = "_self" ><span class="name" > HTML PROJECT </span></a>
+		<span class="domain" > http://www.html1212.com/</span>
+	</header>
+	<nav class="category">
+		<h2 class="cate"><a href="../index.html">카테고리</a></h2>
+		<ul class="ul">
+			<li><a href="../join.html">회원가입</a></li>
+			<li><a href="cal.html">계산기</a></li>
+			<ul class="calul" >
+				<li><a href="calquestion.html">문제지</a></li>
+				<li><a href="calresult.html">답안지</a></li>
+			</ul>
+			<li><a href="../rank/rank.html">성적처리</a></li>
+			<li><a href="../elevator/elevator.html">엘리베이터</a></li>
+		</ul>
+	</nav>
+	<section class="content">
+	<article>
+		<h3 class="cate" >계산기</h3>
+		<form>
+			<fieldset class="array">	
+			<legend>문제입력</legend>
+			<table class="caltable">
+				<tr>
+					<td colspan="3"><input type="text" id="number" style="width:95%; height:90%; text-align:right;" ></td>
+					<td><input type=button value="C" onclick="clearCal()" ></td>
+				</tr>
+				<tr>
+					<td><input type=button value="7" onclick="cal('7')" ></td>
+					<td><input type=button value="8" onclick="cal('8')" ></td>
+					<td><input type=button value="9" onclick="cal('9')" ></td>
+					<td><input type=button value="+" onclick="operator('+')" ></td>
+				</tr>	
+				<tr>
+					<td><input type=button value="4" onclick="cal('4')" ></td>
+					<td><input type=button value="5" onclick="cal('5')" ></td>
+					<td><input type=button value="6" onclick="cal('6')" ></td>
+					<td><input type=button value="-" onclick="operator('-')" ></td>
+				</tr>	
+				<tr>
+					<td><input type=button value="1" onclick="cal('1')" ></td>
+					<td><input type=button value="2" onclick="cal('2')" ></td>
+					<td><input type=button value="3" onclick="cal('3')" ></td>
+					<td><input type=button value="*" onclick="operator('*')" ></td>
+				</tr>	
+				<tr>
+					<td colspan="2"><input type=button value="0" onclick="cal('0')" style="width:100%;" ></td>
+					<td><input type=button value="=" onclick="calresult()" ></td>
+					<td><input type=button value="/" onclick="operator('/')" ></td>
+				</tr>
+			</table>		
+			</fieldset>
+		</form>
+		<p class="back"><a href="cal.html" >[이전으로]</a></p>
+	</article>
+	</section>
+	<aside class="memo">
+	<p class="banner" >Myhome banner</p>
+	<a href="../indexone.html" target="_blank"><img src="../image/shworld.jpg" alt="홈페이지로이동" class="shimg" ></a>
+	</aside>
+	<footer class="info" >
+		<p>서울특별시 금천구 가산동 제이플라츠 (주)OOOO</p>
+		<address><strong>e-mail&nbsp</strong>OO0121@gmail.com</address>
+	</footer>
+	</div>
+</body>
+</html>
+
+
+<!-- 	
+	<script>
+	function myCal() {
+		var sOp1 = document.getElementById("number1").value;
+		var op1 = new Number(sOp1);
+		var sOp2 = document.getElementById("number2").value;
+		var op2 = new Number(sOp2);
+		var op = document.getElementById("operator").value;
+		var result;
+		
+		if(op == "add") {
+			printresult(op1 + op2);
+		} else if(op == "sub") {
+			printresult(op1 - op2);
+		} else if(op == "mul") {
+			printresult(op1 * op2);
+		} else if(op == "div") {
+			printresult(op1 / op2);
+		}
+	}
+	
+	function printresult(result) {
+		console.log(result);
+		//document.getElementById("result").innerHTML= result;
+		document.getElementById("result").value = result; //inner tag에는 값(value)을 넣어줘야한당.
+		
+	}
+	</script>
+
+	<section class="content">
+	<article>
+		<h3 class="cate" >계산기</h3>		
+			<form>
+			<fieldset class="array">	
+			<legend>문제입력</legend>
+			<table class="alignCenter" >
+				<tr>
+				<th><label>문제:</label></th>
+				<td><input type="text" placeholder="ex)5" size="10" id="number1" ></td>
+				<td>
+				<select id="operator">
+					<option value="add">ADD</option>
+					<option value="sub">SUB</option>
+					<option value="mul">MUL</option>
+					<option value="div">DIV</option>
+				</select>
+				</td>
+				<td><input type="text" placeholder="ex)3" size="10" id="number2" ></td>
+			</tr>		
+			</table>		
+			</fieldset>
+		</form>	
+		</form>
+		<div align="center" class="buttonspace" >
+			<input type="button" value="결과보기" onclick="myCal()" >
+		</div>
+		<form>
+		<fieldset class="array">
+		<legend>문제결과</legend>
+		<table class="alignCenter" >
+			<tr>
+				<th>결과: </th>
+				<td><input type="text" id="result" ></td>
+			</tr>
+		</table>
+		</fieldset>
+		</form>
+		<p class="back"><a href="cal.html" >[이전으로]</a></p>
+	</article>
+	</section>
+	<aside class="memo">
+	<p class="banner" >Myhome banner</p>
+	<a href="../indexone.html" target="_blank"><img src="../image/shworld.jpg" alt="홈페이지로이동" class="shimg" ></a>
+	</aside>
+	<footer class="info" >
+		<p>서울특별시 금천구 가산동 제이플라츠 (주)OOOO</p>
+		<address><strong>e-mail&nbsp</strong>OO0121@gmail.com</address>
+	</footer>
+	</div>
+ -->
+ 
+ 		<!--
+		var sOp1 = document.getElementById("number").value;
+		var op1 = new Number(sOp1);
+		var sOp2 = document.getElementById("number").value;
+		var op2 = new Number(sOp2);
+		var op = document.getElementById("operator").value;
+		var result;
+		
+		if(op == "add") {
+			printresult(op1 + op2);
+		} else if(op == "sub") {
+			printresult(op1 - op2);
+		} else if(op == "mul") {
+			printresult(op1 * op2);
+		} else if(op == "div") {
+			printresult(op1 / op2);
+		}
+		-->

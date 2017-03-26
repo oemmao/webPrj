@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>exam No.48</title>
+<link rel="stylesheet" type="text/css" href="../css/elevatorstyle.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/elevator_jq.js"></script>
+</head>
+<body>
+	<div class="all">
+		<header class="head">
+			<a href="../index.html" target="_self"><span class="name">
+					HTML PROJECT </span></a> <span class="domain"> http://www.html1212.com/</span>
+		</header>
+		<nav class="category">
+			<h2 class="cate">
+				<a href="../index.html">카테고리</a>
+			</h2>
+			<ul class="ul">
+				<li><a href="../join.html">회원가입</a></li>
+				<li><a href="../cal/cal.html">계산기</a></li>
+				<li><a href="../rank/rank.html">성적처리</a></li>
+				<li><a href="elevator.html">엘리베이터</a></li>
+				<ul class="calul">
+					<li><a href="elevatordata.html">데이터입력</a></li>
+					<li><a href="elevatorresult.html">결과화면</a></li>
+				</ul>
+			</ul>
+		</nav>
+		<section class="content">
+			<article>
+				<h3 class="cate">엘리베이터</h3>
+				<fieldset class="array">
+					<legend>기본데이터 입력</legend>
+					<table class="alignCenter">
+						<tr>
+							<th><label>TOP_FLOORS</label></th>
+							<td><input type="text" placeholder="최고층 입력 ex)10층" name="topfloor" id="topfloor" size="20"></td>
+						</tr>
+						<tr>
+							<th><label>BOTTOM_FLOORS</label></th>
+							<td><input type="text" placeholder="최하층 입력 ex)1층" name="bottomfloor" id="bottomfloor" size="20"></td>
+						</tr>
+						<tr>
+							<th><label>CURRENT_FLOORS</label></th>
+							<td><input type="text" placeholder="현재층 입력 ex)1층" name="currentfloor" id="currentfloor" size="20"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset class="array">
+					<legend>사용자 데이터 입력</legend>
+					<table class="alignCenter">
+						<tr>
+							<th><label>Desired Floor</label></th>
+							<td><input type="text" placeholder="원하는층 입력 ex)5층" name="desiredfloor" id="desiredfloor" size="20"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<div align="center" class="buttonspace">
+					<div>
+						<input type="submit" class="resultbutton" id="elevatorResult" value="결과보기">
+					</div>
+					<input type="button" class="buttonstyle" id="sampleData" value="샘플데이터입력">
+					<input type="button" class="buttonstyle" id="clearElevator" value="초기화">
+				</div>
+
+				<p id="message" class="message"></p>
+				<p class="back">
+					<a href="elevator.html">[이전으로]</a>
+				</p>
+			</article>
+		</section>
+		<aside class="memo">
+			<p class="banner">Myhome banner</p>
+			<a href="../indexone.html" target="_blank"><img
+				src="../image/shworld.jpg" alt="홈페이지로이동" class="shimg"></a>
+		</aside>
+		<footer class="info">
+			<p>서울특별시 금천구 가산동 제이플라츠 (주)OOOO</p>
+			<address>
+				<strong>e-mail&nbsp</strong>OO0121@gmail.com
+			</address>
+		</footer>
+	</div>
+</body>
+</html>

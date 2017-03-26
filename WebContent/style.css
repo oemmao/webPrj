@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+body { margin : 0; padding : 0 }	
+.all { 
+	width : 960px;
+	margin : 0 auto;
+}
+.head {
+	width : 100%;
+	height : 300px;	
+	position : relative;
+}
+.menu {
+	width : 100%;
+	height : 60px;
+	float : left;
+	background: lightyellow;
+}
+.content {
+	width : 755px;
+	float : left;
+	border-left : 1px solid lightgray;
+	border-right : 1px solid lightgray;
+}
+.ad {
+	width: 200px;
+	height: 2190px;
+	float: left;
+	padding: 20px 0;
+	text-align: center;
+	border-right : 1px solid lightgray;
+}
+.ad img {
+	width:160px;
+	margin:10px 0;
+	text-align:center;
+}
+.info {
+	width : 960px;
+	height : 100px; 
+	float : left;	
+	background-color:#C1F0FE;
+	text-align:center;
+}
+.img {
+	width : 100%;
+	height : 100%;
+}
+.name {
+	position : absolute;
+	font-size : 80px;
+	font-weight : bold;
+	color : white;
+	opacity : 0.8;
+	text-align : center;
+	bottom : 42%; 
+	width : 100%;
+}
+.domain {
+	position : absolute;
+	right : 5%;
+	bottom : 10%; 
+	color : #333;
+	ont-weight : bold;
+}
+.blank {
+	margin:50px;
+}
+.list {
+	padding: 0 0 0 50px;
+}
+.list > li {
+	padding : 5px;
+}
+.blank h2 {
+	margin: 20px 0;
+	padding:10px;
+	border-width: 5px 0;
+	color:#FD94F1;
+	border-color:#A0E2FF;
+	border-style:solid; 		
+}
+.array {
+	list-style: none;
+	height: 30px;
+	padding: 0 0 0 100px;
+}
+.array > li {
+	display: inline;	
+	float:left;
+	font-size : 17px;
+}
+.array a {
+	padding: 5px 5px 5px 5px;
+	display: block;
+	width: 120px;
+}
+.link {
+	padding-bottom:10px;
+	text-align:right;
+	margin-right:40px;
+	text-decoration:none;
+	text-color:#333;
+	font-size:15px;
+}
+a {
+	text-decoration:none;
+}
+a:link, a:visited {
+	color: black;
+}
+a:hover, a:active, a:focus {
+	color:#FD94F1;	
+}
+.line {
+	border-top:1px dotted red;
+	padding-top:10px;
+}
+.table {
+	width:95%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 0 auto 10px;
+}
+th, td {
+	border: 1px solid black;
+	height: 25px;
+}
+td {
+	text-indent:10px;
+}
+th {
+	background-color: #F3E5FC;
+}
+caption {
+	text-align: left;
+}
+.fields, fields:focus {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #333;
+	color:black;
+}
+.space {
+	padding: 5px 0;
+}
+.button {
+	margin: 5px 0 0 20px;
+}
+.textarea {
+	margin: 0 auto;
+	display: block;
+}
+.indent {
+	padding: 0 0 0 20px;
+}

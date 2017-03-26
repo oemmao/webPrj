@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>exam No.48</title>
+	<link rel="stylesheet" type="text/css" href="../css/rankstyle.css" >
+	<script src="../js/rankjs.js"></script>
+</head>
+<body>
+	<div class="all">
+	<header class="head" >
+		<a href = "../index.html" target = "_self" ><span class="name" > HTML PROJECT </span></a>
+		<span class="domain" > http://www.html1212.com/</span>
+	</header>
+	<nav class="category">
+		<h2 class="cate"><a href="../index.html">카테고리</a></h2>
+		<ul class="ul">
+			<li><a href="../join.html">회원가입</a></li>
+			<li><a href="../cal/cal.html">계산기</a></li>
+			<li><a href="rank.html">성적처리</a></li>
+			<ul class="calul" >
+				<li><a href="rankdata.html">데이터입력</a></li>
+				<li><a href="rankresult.html">성적결과</a></li>
+			</ul>
+			<li><a href="../elevator/elevator.html">엘리베이터</a></li>
+		</ul>
+	</nav>
+	<section class="content">
+	<article>
+	<h3 class="cate" >성적처리</h3>
+		<form>
+		<fieldset class="array">
+		<legend>데이터 입력</legend>
+			<table class="rankarray" class="alignCenter" >
+				<tr>
+					<th class="tharray"><label>이름/과목</label></th>
+					<th class="tharray"><label>국어</label></th>
+					<th class="tharray"><label>영어</label></th>
+					<th class="tharray"><label>수학</label></th>
+					<th class="tharray"><label>합계</label></th>
+					<th class="tharray"><label>평균</label></th>
+					<th class="tharray"><label>석차</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="학생1" name="student1" id="student1" size="5" ></td>
+					<td><input type="text" placeholder="점수" name="score1" id="score1" size="3" ></td>
+					<td><input type="text" placeholder="점수" name="score2" id="score2" size="3" ></td>
+					<td><input type="text" placeholder="점수" name="score3" id="score3" size="3" ></td>
+					<td id="sum1" ></td>
+					<td id="avg1" ></td>
+					<td id="rank1" ></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="학생2" name="student2" id="student2" size="5" ></td>
+					<td><input type="text" placeholder="점수" name="score4" id="score4" size="3" ></td>
+					<td><input type="text" placeholder="점수" name="score5" id="score5" size="3" ></td>
+					<td><input type="text" placeholder="점수" name="score6" id="score6" size="3" ></td>
+					<td id="sum2" ></td>
+					<td id="avg2" ></td>
+					<td id="rank2" ></td>
+				</tr>		
+				<tr>
+					<td><input type="text" placeholder="학생3" name=student3 id=student3 size="5" ></td>
+					<td><input type="text" placeholder="점수" name=score7 id=score7 size="3" ></td>
+					<td><input type="text" placeholder="점수" name=score8 id=score8 size="3" ></td>
+					<td><input type="text" placeholder="점수" name=score9 id=score9 size="3" ></td>
+					<td id="sum3" ></td>
+					<td id="avg3" ></td>
+					<td id="rank3" ></td>
+				</tr>
+				<tr>
+					<th class="tharray"><label>총점</label></th>
+					<td id="subtotal1" ></td>
+					<td id="subtotal2" ></td>
+					<td id="subtotal3" ></td>
+					<td id="sumtotal4"></td>
+					<td colspan="2"></td>
+				</tr>
+			</table>	
+		</fieldset>
+		</form>
+		<div class="buttonspace" >
+			<div>
+				<input type="button" class="resultbutton" value="결과보기" onclick="rankResult()" >
+			</div>
+				<input type="button" class="buttonstyle" value="샘플데이터입력" onclick="sampleData()" >
+				<input type="button" class="buttonstyle" value="초기화" onclick="clearRank()" >
+		</div>
+		<p class="back"><a href="rank.html" >[이전으로]</a></p>
+		<p id="demo"></p>
+	</article>
+	</section>
+	<aside class="memo">
+		<p class="banner" >Myhome banner</p>
+		<a href="../indexone.html" target="_blank"><img src="../image/shworld.jpg" alt="홈페이지로이동" class="shimg" ></a>
+	</aside>
+	<footer class="info" >
+		<p>서울특별시 금천구 가산동 제이플라츠 (주)OOOO</p>
+		<address><strong>e-mail&nbsp</strong>OO0121@gmail.com</address>
+	</footer>
+	</div>
+</body>
+</html>
+
+<!-- 
+	<section class="content">
+	<article>
+	<h3 class="cate" >성적처리</h3>
+		<form>
+		<fieldset class="array">
+		<legend>데이터 입력</legend>
+			<table class="alignCenter" >
+			<tr>
+				<th class="tharray"><label>이름/과목</label></th>
+				<td><input type="text" placeholder="과목1 ex)영어" size="10"></td>
+				<td><input type="text" placeholder="과목2 ex)수학" size="10"></td>
+				<td><input type="text" placeholder="과목3 ex)국어" size="10"></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="학생1 ex)김선화" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)80" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)70" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)90" size="10"></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="학생2 ex)김선화" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)80" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)70" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)90" size="10"></td>
+			</tr>	
+			<tr>
+				<td><input type="text" placeholder="학생3 ex)김선화" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)80" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)70" size="10"></td>
+				<td><input type="text" placeholder="점수 ex)90" size="10"></td>
+			</tr>	
+			</table>	
+		</fieldset>
+		</form>
+		<div align="center" class="buttonspace" >
+			<a href="rankresult.html"><input type="submit" value="결과보기"></a>
+		</div>
+		<p class="back"><a href="rank.html" >[이전으로]</a></p>
+	</article>
+	</section>
+ -->

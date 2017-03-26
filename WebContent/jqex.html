@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var op = "";
+var op1 = 0;
+var op2 = 0;
+var str1 = ""; //식 출력을 위해 사용 (op1, op)
+var str2 = ""; //식 출력을 위해 사용 (op2)
+function cal(num) {
+	if(op == "") {
+		str1 += $("input[type=button]").val();
+		document.getElementById("number").value = str1; //식 출력
+		op1 = Number(str1); //값 계산을 위해 op1에 값을 할당
+	} else { 
+		str2 += num;
+		document.getElementById("number").value = str1 + str2; //식 출력
+		op2 = Number(str2); //값 계산을 위해 op2에 값을 할당
+	}
+}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td><input type=button value="7" id="cal7" name="cal7" onclick="cal('7')" ></td>
+<td><input type=button value="8" id="cal8" name="cal8" onclick="cal('8')" ></td>
+<td><input type=button value="9" id="cal9" name="cal9" onclick="cal('9')" ></td>
+<td><input type=button value="+" id="operator1" name="operator1" onclick="operator('+')" ></td>
+</tr>
+<button onclick="cal()">Append text</button>
+<input type="text" id="number" style="width:95%; height:90%; text-align:right;" >
+</table>
+</body>
+</html>
